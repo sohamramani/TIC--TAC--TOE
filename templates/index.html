@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC TAC TOE</title>
+
+    <!-- css and bootstrap -->
+    <link href="../bootstrap-5.3.1-dist/css/bootstrap.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="container">
+        <h1 class=" heading text-center mt-5 mb-5">TIC TAC TOE</h1>
+        <div id="namefields">
+
+            <!-- symbols -->
+            <div class="row d-flex justify-content-between">
+                <div class="col-4">
+                    <label for="sign" class="form-label">Sign :</label>&nbsp; &nbsp;
+                    <span class="sign" id="sign2">x</span>
+                </div>
+                <div class="col-4">
+                    <label for="sign" class="form-label">Sign :</label>&nbsp; &nbsp;
+                    <span class="sign" id="sign2">o</span>
+                </div>
+            </div>
+
+            <!-- player names -->
+            <div class="row d-flex justify-content-between">
+                <div class="col-4">
+                    <label for="player1" class="form-label">Player 1 name  :</label> 
+                    <input type="text" class="form-control text-bg-dark text-warning fw-bolder mb-2" placeholder="Name" id="player1">
+                </div>
+                <div class="col-4">
+                    <label for="player2" class="form-label">Player 2 name :</label> 
+                    <input type="text" class="form-control text-bg-dark fw-bolder text-warning mb-2" placeholder="Name" id="player2">
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="mymodal" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body" id="modal-body">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger"  data-dismiss="modal" id="reset">Reset Game</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- playgame heading -->
+        <h1 class=" heading text-center mt-5 mb-5" id="playgame">Play Game</h1>
+
+        <!-- table -->
+        <div class="table" id="table">
+            <h2 class="heading text-center" id="turn"></h2>
+            <table>
+                <span>
+                    <div id="line"></div>
+                </span>
+                <tr>
+                    <td class="sign fortd justify-content-center"> </td>
+                    <td class="sign fortd"> </td>
+                    <td class="sign fortd"> </td>
+                </tr>
+                
+                <tr>
+                    <td class="sign fortd"> </td>
+                    <td class="sign fortd"> </td>
+                    <td class="sign fortd"> </td>
+                </tr>
+               
+                <tr>
+                    <td class="sign fortd"> </td>
+                    <td class="sign fortd"> </td>
+                    <td class="sign fortd"> </td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+    <script src="../javascript/jquery-3.7.0.min.js"></script><!--jquery script -->
+    <script src="../javascript/script.js"></script>  <!-- script -->  
+    <script src="../bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script> <!--bootstrap script --> 
+</body>
+</html>
